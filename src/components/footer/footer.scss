@@ -1,0 +1,103 @@
+footer{
+    background-color: #0C081A;
+    padding-top: 80px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.footer{
+    border-radius: 30px;
+    background-color: #FFFFFF14;
+    padding-top: 64px;
+    padding-left: 72px;
+    padding-bottom: 34px;
+    padding-right: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    color: 30px;
+    justify-content: space-between;
+    @include for-tablet{
+        column-gap: 30px;
+        padding-left: 50px;
+    }
+    @include for_phone{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    &_left{
+        img{
+            width: 330px;
+            @include for-tablet{
+                width: 280px;
+            }
+            @include for_phone{
+                width: 200px;
+            }
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 32px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        &_media{
+            display: flex;
+            color: #FFFFFF;
+            column-gap: 25px;
+            font-size: 30px;
+        }
+    }
+    ul{
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        column-gap: 20px;
+       @include for_phone{
+        row-gap: 10px;
+       }
+        .list_bold{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        li{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            max-width: 469px;
+        }
+    }
+}
+.big{
+    font-size: 30px;
+}
+
+.footer_end{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    span{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    div{
+        display: flex;
+        column-gap: 48px;
+        flex-direction: column;
+        p{
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+        }
+    }
+}

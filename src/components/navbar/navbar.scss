@@ -1,0 +1,63 @@
+header{
+  margin-bottom: 56px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    &_right{
+        display: flex;
+        column-gap: 80px;
+        align-items: center;
+        &_blog{
+            display: flex;
+            column-gap: 23px;
+            color: #9A999B;
+        }
+        button{
+            border: none;
+            background: none;
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            font-size: 16px;
+        }
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.nav_contact{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  
+    
+    span{
+        font-size: 20px;
+        color: #FB5F12;
+        font-weight: 600;
+        @include for_phone{
+            display: none;
+        }
+    }
+    button{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        display: flex;
+        column-gap: 10px;
+        padding: 12px 24px;
+        background-color: #353437;
+        color: #FFFFFF;
+        border-radius: 30px;
+        align-items: center;
+        @include for_phone{
+            padding: 8px 10px;
+        }
+    }
+}

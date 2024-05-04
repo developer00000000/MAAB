@@ -1,0 +1,128 @@
+.about{
+    width: 100%;
+    margin-top: 99px;
+    background: linear-gradient(219.09deg, #0152EE -9.14%, #5F95FE 100.95%);
+    padding-top: 77px;
+    border-radius: 40px;
+    // padding-left: 223px;
+    // padding-right: 223px;
+    padding-bottom: 75px;
+    @include for_phone{
+        // padding: 0;
+    }
+    h2{
+        font-size: 80px;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-align: center;
+        @include for-tablet{
+            font-size: 50px;
+        }
+        @include for_phone{
+            font-size: 40px;
+        }
+    }
+    &_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        row-gap: 21px;
+        column-gap: 16px;
+        // grid-template-columns: repeat(3, 1fr);
+        &_blog{
+            max-width:  388px;
+            width: 100%;
+            height: 186px;
+            border-radius: 24px;
+            border: 2px solid #FFFFFF3D;
+            background: linear-gradient(244.65deg, rgba(255, 255, 255, 0.24) -0.33%, rgba(255, 255, 255, 0) 121.47%);
+            padding: 20px;
+            @include for_phone{
+                max-width: 300px;
+             
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                color: #FFFFFF;
+                max-width: 352px;
+                @include for_phone{
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: #FFFFFF;
+                max-width: 324px;
+                // @include for_tablet{
+                //     font-size: 13px;
+                //     line-height: 19px;
+                // }
+            }
+        }
+    }
+}
+
+
+.income{
+    margin-top: 74px;
+    background-color: rgb(245, 245, 247);
+    border-radius: 30px;
+    padding-top: 81px;
+    padding-bottom: 81px;
+    width: 100%;
+    h3{
+        color: #1460F2;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 34px;
+        @include for_phone{
+            font-size: 30px;
+        }
+    }
+    &_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 36px;
+        row-gap: 20px;
+
+        &_blog{
+            border: 1px solid #686868;
+            border-radius: 24px;
+            background-color: rgb(255, 255, 255);
+            padding-top: 33px;
+            text-align: center;
+            max-width: 501px;
+            width: 100%;
+            padding-bottom: 38px;
+            @include for_phone{
+                max-width: 350px;
+            }
+            span{
+                color: #E26020;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 60px;
+                @include for_phone{
+                    font-size: 30px;
+                }
+            }
+            p{
+                color: #000000;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 500;
+                @include for_phone{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
